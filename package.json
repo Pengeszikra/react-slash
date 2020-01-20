@@ -1,0 +1,27 @@
+{
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4",
+    "sass": "^1.25.0"
+  },
+  "dependencies": {
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  },
+  "name": "react-cat",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel ./src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pengeszikra/react-cat.git"
+  },
+  "author": "Peter Vivo <pengeszikra@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Pengeszikra/react-cat/issues"
+  },
+  "homepage": "https://github.com/Pengeszikra/react-cat#readme",
+  "description": "react library for simplify react based application"
+}
