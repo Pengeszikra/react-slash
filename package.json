@@ -1,5 +1,5 @@
 {
-  "name": "react-cat",
+  "name": "@pengeszikra/react-cat",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -15,9 +15,10 @@
     "url": "https://github.com/Pengeszikra/react-cat/issues"
   },
   "homepage": "https://github.com/Pengeszikra/react-cat#readme",
-  "description": "react library for simplify react based application",
+  "description": "Tiny useReducer / jsx element naming oriented react helper library.",
   "dependencies": {
     "react": "^16.12.0",
     "react-dom": "^16.12.0"
-  }
+  },
+  "devDependencies": {}
 }

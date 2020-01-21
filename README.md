@@ -1,8 +1,9 @@
 # REACT-CAT  
-Small react library with helper functions.
+Tiny useReducer / jsx element naming oriented react helper library.
 
 **Highlights:**
 - Multiple div factory from classList, with hook like naming
+- css -> jsx naming layer
 - Single stepp action constans and object definition
 - Custom hook return actions calls include dispatch
 - Unify action object
