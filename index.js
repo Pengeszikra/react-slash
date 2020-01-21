@@ -4,5 +4,5 @@ module.exports = {
   noprop: require('./src/noprop'),
   showtime: require('./src/showtime'),
   random: require('./src/random'),
-  useReducerWithActions: require('./src/useReducerWithActions'),
+  useReducerActions: require('./src/useReducerActions'),
 };
