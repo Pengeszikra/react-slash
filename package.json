@@ -1,5 +1,5 @@
 {
-  "name": "@pengeszikra/react-cat",
+  "name": "react-cat",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
