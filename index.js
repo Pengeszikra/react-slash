@@ -4,7 +4,7 @@ import noprop, { stopProp } from './src/noprop';
 import showtime from './src/showtime';
 import useReducerActions from './src/useReducerActions';
 
-module.exports = {
+export default {
   divFactory,
   showFactory,
   actionCreator,

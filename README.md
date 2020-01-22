@@ -1,4 +1,4 @@
-# REACT-CAT  
+# REACT-CAT -- ! *slowly deprecated* !
 Tiny useReducer / jsx element naming oriented react helper library.
 
 **Highlights:**
@@ -11,7 +11,7 @@ Tiny useReducer / jsx element naming oriented react helper library.
 - show on/of capable hof
 
 ## Usage
-```npm install react-cat```
+```npm install @pengeszikra/react-cat```
 
 ### divFactory
 ```jsx
@@ -58,7 +58,7 @@ Tiny useReducer / jsx element naming oriented react helper library.
 ```jsx
 import React from 'react';
 import { render } from 'react-dom';
-import { divFactory, actionCreator, useReducerActions } from 'react-cat';
+import { divFactory, actionCreator, useReducerActions } from '@pengeszikra/react-cat';
 
 const [INC_COUNTER, incCounter] = actionCreator('inc-counter');
 const [DEC_COUNTER, decCounter] = actionCreator('dec-counter');
