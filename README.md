@@ -1,4 +1,4 @@
-# REACT-CAT -- ! *slowly deprecated* !
+# REACT-CAT --> domainless version is: REACT-SLASH
 Tiny useReducer / jsx element naming oriented react helper library.
 
 **Highlights:**
@@ -96,10 +96,3 @@ export default props => {
   );
 }
 ```
-
-### create react library on npm link set: 
-- <https://www.pluralsight.com/guides/publish-es6-react-modules-to-npm> 
-- <https://medium.com/quick-code/publish-your-own-react-component-as-npm-package-under-5-minutes-8a47f0cb92b9>
-- <https://medium.com/@vmarchesin/how-to-publish-a-npm-package-in-four-steps-4344ab88e852>
-- <https://stackoverflow.com/questions/52092739/upgrade-to-babel-7-cannot-read-property-bindings-of-null>
-- <https://dev.to/devdebelistic/setup-react-using-webpack4-babel-7-and-es-lint-airbnb-styling-4d65>

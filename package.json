@@ -1,6 +1,6 @@
 {
   "name": "@pengeszikra/react-cat",
-  "version": "1.1.7",
+  "version": "1.2.0",
   "main": "build/index.js",
   "files": [
     "src/index.js"
@@ -9,7 +9,9 @@
     "react": "^16.6.0"
   },
   "scripts": {
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "precommit": "yarn build",
+    "prepublish": "yarn build"
   },
   "repository": {
     "type": "git",
