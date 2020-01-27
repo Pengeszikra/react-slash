@@ -1,15 +1,9 @@
-import divFactory, {showFactory} from "./utils/divFactory";
-import noprop, {stopProp} from "./utils/noprop";
-import showtime from "./utils/showtime";
-import useReducerActions from "./utils/useReducerActions";
-import actionCreator from "./utils/actionCreator";
-
 module.exports = {
-  divFactory,
-  showFactory,
-  noprop,
-  stopProp,
-  showtime,
-  useReducerActions,
-  actionCreator  
+  divFactory: require('./utils/divFactory'),
+  showFactory: require('./utils/divFactory').showFactory,
+  noprop: require('./utils/noprop'),
+  stopProp: require('./utils/noprop').stopProp,
+  showtime: require('./utils/showtime'),
+  useReducerActions: require('./utils/useReducerActions'),
+  actionCreator: require('./utils/actionCreator')
 };
