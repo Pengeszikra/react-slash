@@ -8,7 +8,7 @@ import showtime from  './utils/showtime';
 import useReducerActions from  './utils/useReducerActions';
 import actionCreator from  './utils/actionCreator';
 
-export default {
+export {
   divFactory,
   showFactory,
   noprop,
