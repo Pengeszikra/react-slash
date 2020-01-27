@@ -1,9 +1,19 @@
-module.exports = {
-  divFactory: require('./utils/divFactory'),
-  showFactory: require('./utils/divFactory').showFactory,
-  noprop: require('./utils/noprop'),
-  stopProp: require('./utils/noprop').stopProp,
-  showtime: require('./utils/showtime'),
-  useReducerActions: require('./utils/useReducerActions'),
-  actionCreator: require('./utils/actionCreator')
+import React from 'react';
+
+import divFactory from  './utils/divFactory';
+import {showFactory} from  './utils/divFactory';
+import noprop from  './utils/noprop';
+import {stopProp} from  './utils/noprop';
+import showtime from  './utils/showtime';
+import useReducerActions from  './utils/useReducerActions';
+import actionCreator from  './utils/actionCreator';
+
+export default {
+  divFactory,
+  showFactory,
+  noprop,
+  stopProp,
+  showtime,
+  useReducerActions,
+  actionCreator
 };
