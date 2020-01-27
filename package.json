@@ -1,9 +1,14 @@
 {
   "name": "@pengeszikra/react-cat",
-  "version": "1.0.7",
-  "main": "src/index.js",
+  "version": "1.0.8",
+  "main": "build/index.js",
+  "files": [
+    "src/index.js"
+  ],
+  "peerDependencies": {
+    "react": "^16.6.0"
+  },
   "scripts": {
-    "start": "webpack --mode production --watch",
     "build": "webpack --mode production"
   },
   "repository": {
@@ -29,7 +34,6 @@
     "webpack-dev-server": "^3.1.10"
   },
   "dependencies": {
-    "react": "^16.6.0",
-    "react-dom": "^16.6.0"
+    "react": "^16.6.0"
   }
 }

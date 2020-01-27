@@ -1,0 +1,1 @@
+export default type => [type, payload => ({type, payload})];

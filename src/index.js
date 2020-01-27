@@ -1,5 +1,15 @@
-import React from "react";
+import divFactory, {showFactory} from "./utils/divFactory";
+import noprop, {stopProp} from "./utils/noprop";
+import showtime from "./utils/showtime";
+import useReducerActions from "./utils/useReducerActions";
+import actionCreator from "./utils/actionCreator";
 
-const Hello = () => <h1>Hello</h1>;
-
-export default Hello;
+module.exports = {
+  divFactory,
+  showFactory,
+  noprop,
+  stopProp,
+  showtime,
+  useReducerActions,
+  actionCreator  
+};
