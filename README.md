@@ -1,4 +1,4 @@
-# REACT-CAT --> domainless version is: REACT-SLASH
+# REACT-SLAH
 Tiny useReducer / jsx element naming oriented react helper library.
 
 **Highlights:**
@@ -11,10 +11,11 @@ Tiny useReducer / jsx element naming oriented react helper library.
 - show on/of capable hof
 
 ## Usage
-```npm install @pengeszikra/react-cat```
+```npm install react-slash```
 
 ### divFactory
 ```jsx
+  import { divFactory } from 'react-slash';
   const [FooHolder, FooButton] = divFactory('foo-holder, foo-holder_button');
 
   return (
@@ -26,6 +27,7 @@ Tiny useReducer / jsx element naming oriented react helper library.
 
 ### actionCreator
 ```jsx
+  import { actionCreator } from 'react-slash';
   const [FOO_ACTION, fooAction] = actionCreator('foo-action');
 
   const fooReducer = (state, {type, payload}) => {
@@ -36,11 +38,13 @@ Tiny useReducer / jsx element naming oriented react helper library.
 
 ### useReducerActions
 ```jsx
+  import { useReducerActions } from 'react-slash';
   const {state, fooAction} = useReducerActions(fooReducer, fooInitialState, {fooAction});
 ```
 
 ### noprop
 ```jsx
+  import { noprop } from 'react-slash';
   const clickFoo = noprop(fooAction);
 
   return <div onClick={clickFoo} />;
@@ -48,17 +52,18 @@ Tiny useReducer / jsx element naming oriented react helper library.
 
 ### showtime
 ```jsx
+  import { showtime } from 'react-slash';
   const FooComponent = showtime(RootOfFooComponent);
 
   return <FooComponent show={true} />
 ```
 
-## react-cat programming example
+## react-slash programming example
 
 ```jsx
 import React from 'react';
 import { render } from 'react-dom';
-import { divFactory, actionCreator, useReducerActions } from '@pengeszikra/react-cat';
+import { divFactory, actionCreator, useReducerActions } from 'react-slash';
 
 const [INC_COUNTER, incCounter] = actionCreator('inc-counter');
 const [DEC_COUNTER, decCounter] = actionCreator('dec-counter');
@@ -84,15 +89,17 @@ export default props => {
   const {state, incCounter, decCounter} = useReducerActions(fooReducer, initialState, fooActions);
   const {counter} = state;
 
-  const [CatCounterFrame, Counter, CounterUpButton, CounterDownButton] = 
-    divFactory('cat-frame', 'cat-counter', 'cat-counter--up', 'cat-counter--down');
+  const [SlashCounterFrame, Counter, CounterUpButton, CounterDownButton] = 
+    divFactory('slash-frame', 'slash-counter', 'slash-counter--up', 'slash-counter--down');
 
   return (
-    <CatCounterFrame>
+    <SlashCounterFrame>
       <Counter>{counter}</Counter>
       <CounterUpButton onClick = {incCounter} />
       <CounterDownButton onClick = {decCounter} />
-    </CatCounterFrame>
+    </SlashCounterFrame>
   );
 }
 ```
+
+*- KIHAL -*
