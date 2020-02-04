@@ -2,7 +2,8 @@
 Tiny useReducer / jsx element naming oriented react helper library.
 
 **Highlights:**
-- Multiple div factory from classList, with hook like naming
+- Multiple div factory from classNames, with hook like naming
+- multiple element factory from classNames (custom factory)
 - css -> jsx naming layer
 - Single stepp action constans and object definition
 - Custom hook return actions calls include dispatch
@@ -23,6 +24,18 @@ Tiny useReducer / jsx element naming oriented react helper library.
       <FooButton>Foo Button</FooButton>
     </FooHolder>
   );
+```
+
+### factory
+```jsx
+  import { factory } from 'react-slash';
+  const [FooSection, FeeSection] = factory(<section />, 'foo-section', 'fee-section');
+
+  return (
+    <FooSection>content of foo</FooSection>
+  );
+
+  // <section class="foo-section">content of foo</section>
 ```
 
 ### actionCreator
@@ -63,7 +76,7 @@ Tiny useReducer / jsx element naming oriented react helper library.
 ```jsx
 import React from 'react';
 import { render } from 'react-dom';
-import { divFactory, actionCreator, useReducerActions } from 'react-slash';
+import { divFactory, actionCreator, useReducerActions, factory } from 'react-slash';
 
 const [INC_COUNTER, incCounter] = actionCreator('inc-counter');
 const [DEC_COUNTER, decCounter] = actionCreator('dec-counter');
@@ -89,8 +102,9 @@ export default props => {
   const {state, incCounter, decCounter} = useReducerActions(fooReducer, initialState, fooActions);
   const {counter} = state;
 
-  const [SlashCounterFrame, Counter, CounterUpButton, CounterDownButton] = 
-    divFactory('slash-frame', 'slash-counter', 'slash-counter--up', 'slash-counter--down');
+  const [SlashCounterFrame] = factory(<main />, 'slash-frame');
+  const [Counter, CounterUpButton, CounterDownButton] = 
+    divFactory('slash-counter', 'slash-counter--up', 'slash-counter--down');
 
   return (
     <SlashCounterFrame>

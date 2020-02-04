@@ -7,6 +7,7 @@ import {stopProp} from  './utils/noprop';
 import showtime from  './utils/showtime';
 import useReducerActions from  './utils/useReducerActions';
 import actionCreator from  './utils/actionCreator';
+import factory from './utils/factory';
 
 export {
   divFactory,
@@ -15,5 +16,6 @@ export {
   stopProp,
   showtime,
   useReducerActions,
-  actionCreator
+  actionCreator,
+  factory,
 };
