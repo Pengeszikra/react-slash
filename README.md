@@ -1,5 +1,6 @@
-# REACT-SLAH
+# REACT-SLAHS
 Tiny useReducer / jsx element naming oriented react helper library.
+[preact based counterpart](https://github.com/Pengeszikra/preact-slash)
 
 **Highlights:**
 - Multiple div factory from classNames, with hook like naming

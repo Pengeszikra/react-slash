@@ -1,6 +1,6 @@
 {
   "name": "react-slash",
-  "version": "0.8.0",
+  "version": "0.8.3",
   "main": "build/index.js",
   "files": [
     "src/index.js"
