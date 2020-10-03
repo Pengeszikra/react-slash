@@ -1,7 +1,6 @@
-module.exports = prompt("what's your favorite flavor of ice cream, buddy?", "I LIKE THEM ALL");
-
-
 module.exports = {
-  customField: 'Example custom field',
-  otherCustomField: 'This example field is really cool'
-   }
+  name: 'react-slash',
+  version: '0.8.5',
+  description: "react-slash is tiny react helper library",
+  license: "MIT"
+};
